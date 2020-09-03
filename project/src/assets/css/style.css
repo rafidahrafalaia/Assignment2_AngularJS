@@ -1,0 +1,36 @@
+.box {
+    background-color: #C4533B;
+    padding: 3em !important;
+    margin: 3em !important;
+}
+
+.chs_teamgrid .card {
+    max-width: 160px;
+    justify-content: space-between;
+}
+
+.chs_teamgrid .card-title {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.chs_teamgrid .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #C4533B !important;
+}
+
+.chs_teamgrid .card-img-top {
+    max-height: 200px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.card-deck.chs_teamgrid {
+    justify-content: center;
+}
+
+.card-footer {
+    background-color: transparent !important;
+}

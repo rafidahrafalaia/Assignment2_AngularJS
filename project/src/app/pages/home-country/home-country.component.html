@@ -1,0 +1,34 @@
+
+    <h5 class="text-center" style="margin-top: 25px; margin-bottom: 25px;">Three Most Populated Countries</h5>
+    <div class="col-12">
+        <div class="card-deck chs_teamgrid">
+            <div class="card" *ngFor="let country of countrySortPopulation" routerLink="/detail/" [state]={country:country}>
+                <div class="card-body text-center">
+                    <span class="card-title" style="color: white;">{{country.name}}</span>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text text-center">
+                        {{ country.population | number : 0}}
+                        <small class="text-muted"></small><br> People
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="text-center" style="margin-top: 25px; margin-bottom: 25px;">Three Largest Countries(Area)</h5>
+    <div class="col-12">
+        <div class="card-deck chs_teamgrid">
+            <div class="card" *ngFor="let country of countrySortArea" routerLink="/detail/" [state]={country:country}>
+                <div class="card-body text-center">
+                    <span class="card-title" style="color: white;">{{country.name}}</span>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text text-center">
+                        {{country.area}} Km<sup>2</sup>
+                        <small class="text-muted"></small><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
